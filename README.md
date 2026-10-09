@@ -4,7 +4,7 @@
 
 A pixel capybara who lives in your terminal. She dances when your tests pass.
 
-Her name is Mica. After every `pytest` run she reads the results and reacts. Green tests make her dance, red ones make her worried, and if you don't run your tests for a couple of days, she falls asleep. A personal project in Python, pytest and Pydantic.
+Her name is Mica. After every `pytest` run she reads the results and reacts. Green tests make her dance, red ones make her worried, and if you don't run your tests for a couple of days, she falls asleep.
 
 **[Try her in your browser](https://jordanaftali.github.io/micapybara)**: run passing or failing tests, feed her an orange, or skip a few days.
 
