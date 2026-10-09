@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "micapybara"
+version = "0.1.0"
+description = "A pixel capybara who lives in your terminal and dances when your tests pass."
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Jordana Naftali" }]
+requires-python = ">=3.10"
+dependencies = ["pydantic>=2.6"]
+keywords = ["pytest", "terminal", "pixel-art", "capybara", "pet"]
+classifiers = ["Framework :: Pytest", "Programming Language :: Python :: 3"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+capy = "micapybara.cli:main"
+
+[project.entry-points.pytest11]
+micapybara = "micapybara.plugin"
+
+[project.urls]
+Demo = "https://jordanaftali.github.io/micapybara"
+Source = "https://github.com/jordanaftali/micapybara"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-p pytester"
